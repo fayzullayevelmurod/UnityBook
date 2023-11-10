@@ -11,6 +11,16 @@
     }
 }
 
+@media (min-width: 1255px) {
+
+    .media_menu_wrapper {
+        display: none;
+    }
+    .media_menu {
+        display: none;
+    }
+}
+
 @media (max-width: 1100px) {
     #home {
         .main_container {
@@ -142,6 +152,10 @@
 }
 
 @media (max-width: 576px) {
+    .media_menu {
+        width: 100%;
+    }
+
     #unitybook {
         .unitybook_in {
             padding: 0 20px;

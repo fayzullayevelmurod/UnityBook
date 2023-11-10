@@ -36,6 +36,15 @@
   margin-bottom: 40px;
 }
 
+.main_text {
+  color: #353535;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 18.75px */
+}
+
 .button_coral {
   display: flex;
   align-items: center;
@@ -227,6 +236,71 @@ header .burger .burger_close {
   white-space: nowrap;
 }
 
+#about {
+  padding: 60px 0 44px 0;
+  background-image: url("../images/about_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+#about .main_title {
+  color: #F5F5F6;
+}
+#about .main_text {
+  max-width: 635px;
+  margin: 0 auto 40px auto;
+  color: #F5F5F6;
+}
+#about .about_wrapper {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: space-evenly;
+}
+
+#unitybook {
+  padding: 80px 0;
+}
+#unitybook .main_title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+#unitybook .unitybook_in {
+  display: flex;
+  align-items: start;
+  gap: 25px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#unitybook .unitybook_card {
+  max-width: 308px;
+}
+#unitybook .unitybook_card .number {
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 89px;
+  height: 89px;
+  border-radius: 50%;
+  color: #FFF;
+  font-family: "Manrope", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 45px */
+  letter-spacing: 0.72px;
+  background-color: #EFB304;
+}
+#unitybook .unitybook_card .subtitle {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #353535;
+  font-weight: 700;
+}
+
 @media (max-width: 1255px) {
   header .sign_in,
   header .nav {
@@ -242,6 +316,9 @@ header .burger .burger_close {
   }
   #home .home_img img {
     width: 100%;
+  }
+  #unitybook .unitybook_in {
+    justify-content: space-evenly;
   }
 }
 @media (max-width: 940px) {
@@ -269,6 +346,9 @@ header .burger .burger_close {
   }
 }
 @media (max-width: 768px) {
+  header {
+    border-radius: 50px 50px 0 0;
+  }
   #home {
     padding: 76px 0 43px 0;
     overflow: hidden;
@@ -286,5 +366,45 @@ header .burger .burger_close {
   #home .home_img .media_img {
     width: 100vw;
     display: block;
+  }
+  #about {
+    overflow: hidden;
+    background-image: url("../images/about_bg_media.png");
+    background-size: cover;
+    padding: 40px 0;
+    border-radius: 50px 50px 0 0;
+  }
+  #about .main_title {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  #about .main_text {
+    font-size: 15px;
+    margin-bottom: 63px;
+  }
+  #about .about_wrapper {
+    margin-top: 43px;
+  }
+  #unitybook {
+    padding: 60px 0 40px 0;
+  }
+  #unitybook .main_title {
+    font-size: 23px;
+    margin-bottom: 25px;
+  }
+  #unitybook .unitybook_in .unitybook_card .subtitle {
+    font-size: 19px;
+  }
+}
+@media (max-width: 576px) {
+  #unitybook .unitybook_in {
+    padding: 0 20px;
+    justify-content: left;
+  }
+  #unitybook .unitybook_in .unitybook_card .number {
+    margin: 0 0 15px 0;
+  }
+  #unitybook .unitybook_in .unitybook_card .subtitle {
+    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */

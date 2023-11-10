@@ -22,6 +22,12 @@
             }
         }
     }
+
+    #unitybook {
+        .unitybook_in {
+            justify-content: space-evenly;
+        }
+    }
 }
 
 @media (max-width: 940px) {
@@ -63,6 +69,10 @@
 }
 
 @media (max-width: 768px) {
+    header {
+        border-radius: 50px 50px 0 0;
+    }
+
     #home {
         padding: 76px 0 43px 0;
         overflow: hidden;
@@ -89,6 +99,60 @@
             .media_img {
                 width: 100vw;
                 display: block;
+            }
+        }
+    }
+
+    #about {
+        overflow: hidden;
+        background-image: url('../images/about_bg_media.png');
+        background-size: cover;
+        padding: 40px 0;
+        border-radius: 50px 50px 0 0;
+
+        .main_title {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .main_text {
+            font-size: 15px;
+            margin-bottom: 63px;
+        }
+
+        .about_wrapper {
+            margin-top: 43px;
+        }
+    }
+
+    #unitybook {
+        padding: 60px 0 40px 0;
+        .main_title {
+            font-size: 23px;
+            margin-bottom: 25px;
+        }
+        .unitybook_in {
+            .unitybook_card {
+                .subtitle {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #unitybook {
+        .unitybook_in {
+            padding: 0 20px;
+            justify-content: left;
+            .unitybook_card {
+                .number {
+                    margin: 0 0 15px 0;
+                }
+                .subtitle {
+                    text-align: left;
+                }
             }
         }
     }

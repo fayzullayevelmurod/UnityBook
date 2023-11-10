@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+$Monrope: 'Manrope', sans-serif;
+
+.main_container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main_ttile {
+    color:  #353535;
+    font-family: $Manrope;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 0.72px;
+    margin-bottom: 15px;
+
+    span {
+        color:  #EFB304;
+    }
+}
+
+.sup_title {
+    color: #353535;
+    font-family: $Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    margin-bottom: 40px;
+}
+
+.button_coral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    padding: 0 45px;
+    color: #353535;
+    font-family: $Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    border-radius: 100px;
+    background: var(--img, #EFB304);
+    transition: .2s ease;
+    
+    &:hover {
+        background: #FFCA30;
+    }
+
+    &:active {
+        background: #CF9C05;
+    }
+}
+
+.button_light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 55px;
+    padding: 0 45px;
+    color: #353535;
+    font-family: $Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    border-radius: 100px;
+    background: transparent;
+    border: 2px solid var(--, #EFB304);
+    transition: .2s ease;
+
+    &:hover {
+        background:  #EFB304;
+    }
+
+    &:active {
+        background: #CF9C05;
+    }
+}
+// header
+header {}
+
+// about
+#about {}
+
+// unitybook
+#unitybook {}
+
+// work
+#work {}
+
+// contact
+#contact {}
+
+// news
+#news {}
+
+// footer
+footer {}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.main_container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main_ttile {
+  color: var(--, #353535);
+  font-family: Manrope;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 45px */
+  letter-spacing: 0.72px;
+}/*# sourceMappingURL=style.css.map */

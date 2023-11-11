@@ -1,0 +1,173 @@
+@media (max-width: 1255px) {
+    header {
+        .sign_in,
+        .nav {
+            display: none;
+        }
+
+        .burger {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 1255px) {
+
+    .media_menu_wrapper {
+        display: none;
+    }
+    .media_menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    #home {
+        .main_container {
+            gap: 20px;
+        }
+        .home_img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #unitybook {
+        .unitybook_in {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    #home {
+
+        .main_container {
+            gap: 20px;
+        }
+        
+        .home_text {
+
+            .main_title {
+                font-size: 23px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+
+            .home_btns {
+                flex-direction: column;
+                align-items: start;
+                gap: 20px;
+                button {
+                    font-size: 19px;
+                    width: 230px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .home_img {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        border-radius: 50px 50px 0 0;
+    }
+
+    #home {
+        padding: 76px 0 43px 0;
+        overflow: hidden;
+
+        .main_container {
+            gap: 43px;
+            flex-direction: column;
+        }
+
+        .home_text {
+
+            .home_btns {
+                align-items: center;
+            }
+
+        }
+
+        .home_img {
+
+            .desktop_img {
+                display: none;
+            }
+
+            .media_img {
+                width: 100vw;
+                display: block;
+            }
+        }
+    }
+
+    #about {
+        overflow: hidden;
+        background-image: url('../images/about_bg_media.png');
+        background-size: cover;
+        padding: 40px 0;
+        border-radius: 50px 50px 0 0;
+
+        .main_title {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .main_text {
+            font-size: 15px;
+            margin-bottom: 63px;
+        }
+
+        .about_wrapper {
+            margin-top: 43px;
+        }
+    }
+
+    #unitybook {
+        padding: 60px 0 40px 0;
+        .main_title {
+            font-size: 23px;
+            margin-bottom: 25px;
+        }
+        .unitybook_in {
+            .unitybook_card {
+                .subtitle {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .media_menu {
+        width: 100%;
+    }
+
+    #unitybook {
+        .unitybook_in {
+            padding: 0 20px;
+            justify-content: left;
+            .unitybook_card {
+                .number {
+                    margin: 0 0 15px 0;
+                }
+                .subtitle {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

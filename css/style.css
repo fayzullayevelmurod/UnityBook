@@ -855,6 +855,13 @@ footer .link_1 a {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  transition: 0.2s ease;
+}
+footer .link_1 a:hover {
+  color: #5B5A5A;
+}
+footer .link_1 a.active {
+  font-weight: 700;
 }
 footer .link_2 {
   display: flex;

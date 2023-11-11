@@ -1005,6 +1005,15 @@ footer {
             font-style: normal;
             font-weight: 400;
             line-height: 125%;
+            transition: .2s ease;
+
+            &:hover {
+                color: #5B5A5A;
+            }
+        }
+
+        a.active {
+            font-weight: 700;
         }
     }
 

@@ -120,7 +120,6 @@ body.hidden {
   height: 100vh;
   width: 100%;
   padding: 40px 30px 80px 30px;
-  border-radius: 50px;
   display: none;
   flex-direction: column;
   animation: open 0.2s linear;

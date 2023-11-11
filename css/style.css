@@ -103,16 +103,6 @@ body.hidden {
   border: 2px solid #CF9C05;
 }
 
-.media_menu_wrapper {
-  transition: 0.2s ease;
-  position: fixed;
-  z-index: 19;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(10, 10, 10, 0.9);
-}
-
 .media_menu_wrapper.active {
   display: block;
 }
@@ -140,56 +130,86 @@ body.hidden {
 }
 .media_menu .location {
   padding: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  position: relative;
   margin-bottom: 30px;
 }
-.media_menu .location .location_icon {
-  margin-right: 7px;
+.media_menu .location .select {
+  width: 213px;
+  position: relative;
 }
-.media_menu .location span {
-  display: block;
-  max-width: 110px;
+.media_menu .location .select .head {
+  height: 47px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.media_menu .location .select .head span {
+  margin-left: 7px;
+  width: 118px;
   color: #353535;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 125%; /* 18.75px */
+  line-height: 125%;
 }
-.media_menu .location .location_dropdown {
+.media_menu .location .select .head input {
+  width: 118px;
   display: none;
-}
-.media_menu .location.active {
-  background: #FFF;
-}
-.media_menu .location.active .down_icon {
-  transform: rotate();
-}
-.media_menu .location.active .location_dropdown {
-  position: absolute;
-  width: 100%;
-  top: 57px;
-  left: 0;
-  background: #FFF;
-  display: block;
-}
-.media_menu .location.active .location_dropdown a {
-  width: 100%;
-  color: var(--, #353535);
-  font-family: Manrope;
+  color: #353535;
+  font-family: "Manrope", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 125%; /* 18.75px */
-  transition: 0.2s ease;
-  padding: 10px;
+  line-height: 125%;
+  background: transparent;
+  outline: none;
+  border: none;
 }
-.media_menu .location.active .location_dropdown a:hover {
+.media_menu .location .select .head .icon {
+  transition: 0.2s ease;
+}
+.media_menu .location .select .result {
+  background-color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+}
+.media_menu .location .select .result button {
+  padding: 10px;
+  color: #353535;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  transition: 0.2s ease;
+}
+.media_menu .location .select .result button:hover {
   background: #D9D9D9;
+}
+.media_menu .location .select.active {
+  background: white;
+}
+.media_menu .location .select.active .head span {
+  display: none;
+}
+.media_menu .location .select.active .head input {
+  display: block;
+}
+.media_menu .location .select.active .head .icon {
+  transform: rotateZ(180deg);
+}
+.media_menu .location .select.active .result {
+  display: flex;
 }
 .media_menu .nav {
   display: flex;
@@ -268,55 +288,84 @@ header .main_container {
 }
 header .location {
   padding: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
+}
+header .location .select {
+  width: 213px;
   position: relative;
 }
-header .location .location_icon {
-  margin-right: 7px;
+header .location .select .head {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
-header .location span {
-  display: block;
-  max-width: 110px;
+header .location .select .head span {
+  margin-left: 7px;
+  width: 118px;
   color: #353535;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 125%; /* 18.75px */
+  line-height: 125%;
 }
-header .location .location_dropdown {
+header .location .select .head input {
+  width: 118px;
   display: none;
-}
-header .location.active {
-  background: #FFF;
-}
-header .location.active .down_icon {
-  transform: rotate(180deg);
-}
-header .location.active .location_dropdown {
-  position: absolute;
-  width: 100%;
-  top: 57px;
-  left: 0;
-  background: #FFF;
-  display: block;
-}
-header .location.active .location_dropdown a {
-  width: 100%;
-  color: var(--, #353535);
-  font-family: Manrope;
+  color: #353535;
+  font-family: "Manrope", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 125%; /* 18.75px */
-  transition: 0.2s ease;
-  padding: 10px;
+  line-height: 125%;
+  background: transparent;
+  outline: none;
+  border: none;
 }
-header .location.active .location_dropdown a:hover {
+header .location .select .head .icon {
+  transition: 0.2s ease;
+}
+header .location .select .result {
+  background-color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+}
+header .location .select .result button {
+  padding: 10px;
+  color: #353535;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  transition: 0.2s ease;
+}
+header .location .select .result button:hover {
   background: #D9D9D9;
+}
+header .location .select.active {
+  background: white;
+}
+header .location .select.active .head span {
+  display: none;
+}
+header .location .select.active .head input {
+  display: block;
+}
+header .location .select.active .head .icon {
+  transform: rotateZ(180deg);
+}
+header .location .select.active .result {
+  display: flex;
 }
 header .nav {
   display: flex;
@@ -339,6 +388,9 @@ header .nav_link .nav_item {
 }
 header .nav_link .nav_item:hover {
   color: #5B5A5A;
+}
+header .nav_link .nav_item.active {
+  font-weight: 700;
 }
 header .nav_link .nav_item.active {
   color: #353535;
@@ -937,7 +989,7 @@ footer .select.active .result {
   .media_menu_wrapper {
     display: none;
   }
-  .media_menu {
+  .media_menu.active {
     display: none;
   }
 }

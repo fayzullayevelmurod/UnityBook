@@ -42,3 +42,57 @@ document.addEventListener('click', function handleClickOutsideBox(event) {
         box.classList.remove('active')
     }
 });
+
+
+let select_btn2 = document.querySelector('header .select .head');
+let select_text2 = document.querySelector('header .select .head span')
+let select_input2 = document.querySelector('header .select .head input')
+let select2 = document.querySelector('header .select');
+let select_items2 = document.querySelectorAll('header .select .result button');
+
+select_btn2.onclick = () => {
+    select2.classList.add('active')
+    select_input2.focus();
+}
+
+select_items2.forEach(item => {
+    item.onclick = () => {
+        select_text2.innerText = item.textContent;
+        select2.classList.remove('active')
+    }
+})
+
+document.addEventListener('click', function handleClickOutsideBox(event) {
+    const box = document.querySelector('header .select');
+
+    if (!box.contains(event.target)) {
+        box.classList.remove('active')
+    }
+});
+
+
+let select_btn3 = document.querySelector('.media_menu_wrapper .select .head');
+let select_text3 = document.querySelector('.media_menu_wrapper .select .head span')
+let select_input3 = document.querySelector('.media_menu_wrapper .select .head input')
+let select3 = document.querySelector('.media_menu_wrapper .select');
+let select_items3 = document.querySelectorAll('.media_menu_wrapper .select .result button');
+
+select_btn3.onclick = () => {
+    select3.classList.add('active')
+    select_input3.focus();
+}
+
+select_items3.forEach(item => {
+    item.onclick = () => {
+        select_text3.innerText = item.textContent;
+        select3.classList.remove('active')
+    }
+})
+
+document.addEventListener('click', function handleClickOutsideBox(event) {
+    const box = document.querySelector('header .select');
+
+    if (!box.contains(event.target)) {
+        box.classList.remove('active')
+    }
+});

@@ -628,6 +628,15 @@ header {
         transform: translateX(-50%);
         transition: .2s ease;
 
+        span {
+            color: #353535;
+            font-family: "Manrope", sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 125%;
+        }
+
         &:hover {
             border: 2px solid #EFB304;
             background: #EFB304;
@@ -858,6 +867,10 @@ header {
         .link {
             position: relative;
             display: none;
+
+            &:active {
+                opacity: 0.7;
+            }
         }
     }
     
